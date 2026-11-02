@@ -1,0 +1,712 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Koleksi Ikan Hias | FishStory</title>
+  <meta name="description" content="Jelajahi koleksi ikan hias air tawar dan air laut FishStory. Temukan keindahan dunia akuatik untuk akuariummu.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVIGASI -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">◈</span>
+      Fish<span>Story</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html" class="active">Produk</a>
+      <a href="kontak.html" class="nav-cta">Hubungi Kami ↗</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO PRODUK -->
+    <section class="products-hero">
+      <div class="products-hero-overlay"></div>
+
+      <div class="products-hero-content reveal">
+        <span class="eyebrow">THE AQUATIC COLLECTION</span>
+
+        <h1>
+          Temukan pesona
+          <span>dunia bawah air.</span>
+        </h1>
+
+        <p>
+          Dari warna eksotis ikan air tawar hingga keajaiban kehidupan
+          laut. Temukan koleksi yang menghidupkan setiap sudut akuariummu.
+        </p>
+
+        <a href="#koleksi" class="btn-primary">
+          Jelajahi Koleksi <span>↓</span>
+        </a>
+      </div>
+
+      <div class="products-hero-caption">
+        <span>CURATED AQUATIC BEAUTY</span>
+        <span>FISHSTORY COLLECTION</span>
+      </div>
+      <div class="hero-mascots" aria-label="Maskot ikan FishStory">
+  <span class="mascot-fish mascot-orange">🐠</span>
+  <span class="mascot-fish mascot-blue">🐟</span>
+  <span class="mascot-fish mascot-puffer">🐡</span>
+  <span class="mascot-bubble">🫧</span>
+</div>
+    </section>
+
+    <!-- PENGANTAR -->
+    <section class="collection-intro" id="koleksi">
+      <div class="collection-intro-inner reveal">
+        <span class="eyebrow">FIND YOUR UNDERWATER WORLD</span>
+        <h2>Satu hobi. <span>Ribuan keindahan.</span></h2>
+        <p>
+          Jelajahi galeri ikan hias kami dan temukan inspirasi untuk
+          menciptakan ekosistem akuatik yang sesuai dengan gayamu.
+          Ketersediaan spesies dapat berubah.
+        </p>
+      </div>
+
+      <!-- FILTER KATEGORI -->
+      <div class="product-filters" role="group" aria-label="Filter kategori ikan">
+        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">
+          Semua Koleksi
+        </button>
+        <button class="filter-btn" type="button" data-filter="freshwater" aria-pressed="false">
+          Air Tawar
+        </button>
+        <button class="filter-btn" type="button" data-filter="marine" aria-pressed="false">
+          Air Laut
+        </button>
+      </div>
+    </section>
+
+    <!-- GALERI IKAN -->
+    <section class="product-gallery-section">
+
+      <div class="gallery-heading reveal" id="air-tawar">
+        <div>
+          <span class="eyebrow">01 / FRESHWATER WORLD</span>
+          <h2>Freshwater <span>Collection</span></h2>
+        </div>
+        <p>Warna memikat, karakter unik, dan pesona air tawar.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- IKAN 1 -->
+        <article class="product-card reveal" data-category="freshwater">
+          <div class="product-image">
+            <img
+              src="https://th.bing.com/th/id/OIP.RAZTvqXYX8gsMJZID1uLAwHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Ikan hias tropis air tawar"
+              loading="lazy"
+            >
+            <span class="product-tag">FRESHWATER</span>
+            <span class="product-number">01</span>
+          </div>
+          <div class="product-info">
+            <span class="product-type">15.000</span>
+            <h3>Ikan Cupang</h3>
+            <p>Pilihan ikan Cupang dengan warna dan karakter yang beragam.</p>
+            <a href="kontak.html?produk=Ikan%20Tropis" class="product-link">
+              Tanya Ketersediaan <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- IKAN 2 -->
+        <article class="product-card reveal" data-category="freshwater">
+          <div class="product-image">
+            <img
+              src="download (1).jpe"
+              alt="Pemandangan akuarium dengan kehidupan akuatik"
+              loading="lazy"
+            >
+            <span class="product-tag">FRESHWATER</span>
+            <span class="product-number">02</span>
+          </div>
+          <div class="product-info">
+            <span class="product-type">60.000</span>
+            <h3>Ikan Koi</h3>
+            <p>Ikan koi impor jepang yang menawan akan menghias kehidupan kolam dengan warna yang bervariasi.</p>
+            <a href="kontak.html?produk=Koleksi%20Akuatik" class="product-link">
+              Tanya Ketersediaan <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- IKAN 3 -->
+        <article class="product-card reveal" data-category="freshwater">
+          <div class="product-image">
+            <img
+              src="Aquariums_ Tips memelihara Ikan Mas Koki di Aquarium.jpe"
+              alt="Ikan hias dalam akuarium"
+              loading="lazy"
+            >
+            <span class="product-tag">FRESHWATER</span>
+            <span class="product-number">03</span>
+          </div>
+          <div class="product-info">
+            <span class="product-type">45.000</span>
+            <h3>Ikan Koki</h3>
+            <p>ikan koki yang gembul gembul penuh warna akan selalu menghiburmu.</p>
+            <a href="kontak.html?produk=Ikan%20Hias%20Pilihan" class="product-link">
+              Tanya Ketersediaan <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- GALERI AIR LAUT -->
+      <div class="gallery-heading marine-heading reveal" id="air-laut">
+        <div>
+          <span class="eyebrow">02 / MARINE WONDER</span>
+          <h2>Marine <span>Collection</span></h2>
+        </div>
+        <p>Warna samudra dan keajaiban kehidupan laut tropis.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- IKAN 4 -->
+        <article class="product-card reveal" data-category="marine">
+          <div class="product-image">
+            <img
+              src="fishies _.jpe"
+              alt="Keindahan kehidupan ikan laut tropis"
+              loading="lazy"
+            >
+            <span class="product-tag">MARINE</span>
+            <span class="product-number">04</span>
+          </div>
+          <div class="product-info">
+            <span class="product-type">50.000</span>
+            <h3>Ikan Nemo</h3>
+            <p>Ikan nemo yang lucu dan berwarna orange cerah akan menghias aquarium dengan indah.</p>
+            <a href="kontak.html?produk=Ikan%20Laut%20Tropis" class="product-link">
+              Tanya Ketersediaan <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- IKAN 5 -->
+        <article class="product-card reveal" data-category="marine">
+          <div class="product-image">
+            <img
+              src="royal.jpe"
+              alt="Terumbu karang dan kehidupan laut"
+              loading="lazy"
+            >
+            <span class="product-tag">MARINE</span>
+            <span class="product-number">05</span>
+          </div>
+          <div class="product-info">
+            <span class="product-type">35.000</span>
+            <h3>Ikan royal gramma</h3>
+            <p>ikan Royal gramma akan membuat aquarium terasa di dunia fantasi karena warnanya yang ajaib.</p>
+            <a href="kontak.html?produk=Pesona%20Terumbu%20Karang" class="product-link">
+              Tanya Ketersediaan <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- IKAN 6 -->
+        <article class="product-card reveal" data-category="marine">
+          <div class="product-image">
+            <img
+              src="ikandori.jpe"
+              alt="Pemandangan bawah laut berwarna biru"
+              loading="lazy"
+            >
+            <span class="product-tag">MARINE</span>
+            <span class="product-number">06</span>
+          </div>
+          <div class="product-info">
+            <span class="product-type">40.000</span>
+            <h3>Ikan Dori</h3>
+            <p>ikan dori yang berwarna biru cocok untuk menemani ikan nemo berjelajah.</p>
+            <a href="kontak.html?produk=Ocean%20Collection" class="product-link">
+              Tanya Ketersediaan <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="gallery-note">
+        * Foto merupakan ilustrasi koleksi. Hubungi FishStory untuk
+        konfirmasi spesies, ukuran, kondisi, dan ketersediaan aktual.
+      </p>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="products-cta">
+      <div class="products-cta-content reveal">
+        <span class="eyebrow">LET'S FIND YOUR FISH</span>
+        <h2>Sudah menemukan <span>favoritmu?</span></h2>
+        <p>
+          Hubungi kami untuk bertanya mengenai koleksi, perawatan,
+          dan pilihan ikan yang sesuai dengan akuariummu.
+        </p>
+        <a href="kontak.html" class="btn-primary">Hubungi FishStory ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">◈</span>
+          Fish<span>Story</span>
+        </a>
+        <p>
+          Menghadirkan keindahan dunia akuatik,
+          satu cerita dalam satu waktu.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Eksplorasi</h4>
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="produk.html">Produk</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Terhubung</h4>
+        <a href="kontak.html">Kontak</a>
+        <a href="kontak.html">Konsultasi</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> FishStory. All rights reserved.</p>
+      <span>MADE FOR AQUATIC ENTHUSIASTS <span class="footer-dot">●</span></span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+
+  <!-- CSS KHUSUS HALAMAN PRODUK -->
+  <style>
+    .products-hero {
+      min-height: 68vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(3, 13, 29, .94), rgba(3, 13, 29, .35)),
+        url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=2000&q=90")
+        center / cover no-repeat;
+    }
+
+    .products-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, #061426, transparent 55%);
+    }
+
+    .products-hero-content {
+      position: relative;
+      z-index: 1;
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      padding: 110px 0 130px;
+    }
+
+    .products-hero h1 {
+      max-width: 850px;
+      margin: 0 0 25px;
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      line-height: 1.05;
+      letter-spacing: -2px;
+    }
+
+    .products-hero h1 span,
+    .collection-intro h2 span,
+    .gallery-heading h2 span,
+    .products-cta h2 span {
+      color: #62e8ff;
+    }
+
+    .products-hero-content > p {
+      max-width: 620px;
+      margin-bottom: 32px;
+      color: #c0cedf;
+      font-size: 1.02rem;
+      line-height: 1.9;
+    }
+
+    .products-hero-caption {
+      position: absolute;
+      bottom: 25px;
+      left: 5%;
+      right: 5%;
+      display: flex;
+      justify-content: space-between;
+      color: #a6bdd0;
+      font-size: .65rem;
+      letter-spacing: 2px;
+    }
+
+    .collection-intro {
+      padding: 90px 5% 35px;
+      text-align: center;
+    }
+
+    .collection-intro-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .collection-intro h2,
+    .gallery-heading h2,
+    .products-cta h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin: 0 0 18px;
+    }
+
+    .collection-intro p,
+    .gallery-heading > p,
+    .products-cta p {
+      color: #aabbd0;
+      font-size: .95rem;
+      line-height: 1.9;
+    }
+
+    .product-filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 38px auto 10px;
+    }
+
+    .filter-btn {
+      padding: 12px 22px;
+      border: 1px solid rgba(98, 232, 255, .24);
+      border-radius: 50px;
+      background: #0a1c30;
+      color: #b7c8d9;
+      font: inherit;
+      font-size: .84rem;
+      cursor: pointer;
+      transition: .25s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #62e8ff;
+      color: #061426;
+      border-color: #62e8ff;
+    }
+
+    .filter-btn:focus-visible,
+    .product-link:focus-visible {
+      outline: 2px solid white;
+      outline-offset: 4px;
+    }
+
+    .product-gallery-section {
+      padding: 35px 5% 100px;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .gallery-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin: 70px 0 30px;
+      scroll-margin-top: 100px;
+    }
+
+    .gallery-heading h2 {
+      margin-bottom: 0;
+    }
+
+    .gallery-heading > p {
+      max-width: 350px;
+      margin: 0 0 5px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid rgba(98, 232, 255, .12);
+      background: linear-gradient(145deg, #10263a, #071525);
+      transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(98, 232, 255, .48);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, .25);
+    }
+
+    .product-image {
+      height: 265px;
+      position: relative;
+      overflow: hidden;
+      background: #0c2338;
+    }
+
+    .product-image::after {
+      content: "";
+      position: absolute;
+      inset: 45% 0 0;
+      background: linear-gradient(transparent, rgba(2, 12, 24, .48));
+      pointer-events: none;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform .7s ease;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.08);
+    }
+
+    .product-tag {
+      position: absolute;
+      z-index: 1;
+      top: 16px;
+      left: 16px;
+      padding: 8px 11px;
+      background: rgba(4, 18, 34, .82);
+      border: 1px solid rgba(98, 232, 255, .35);
+      color: #72eaff;
+      font-size: .6rem;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      backdrop-filter: blur(10px);
+    }
+
+    .product-number {
+      position: absolute;
+      z-index: 1;
+      right: 17px;
+      bottom: 12px;
+      color: white;
+      font: 700 2rem 'Outfit', sans-serif;
+      opacity: .8;
+    }
+
+    .product-info {
+      padding: 25px 23px 27px;
+    }
+
+    .product-type {
+      color: #62e8ff;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+    }
+
+    .product-info h3 {
+      margin: 10px 0;
+      color: #f1f8ff;
+      font: 600 1.45rem 'Outfit', sans-serif;
+    }
+
+    .product-info p {
+      min-height: 54px;
+      margin: 0 0 22px;
+      color: #aabbd0;
+      font-size: .88rem;
+      line-height: 1.8;
+    }
+
+    .product-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      color: #62e8ff;
+      font-size: .82rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .product-link span {
+      transition: transform .25s;
+    }
+
+    .product-link:hover span {
+      transform: translate(3px, -3px);
+    }
+
+    .product-card[hidden] {
+      display: none !important;
+    }
+
+    .gallery-note {
+      margin-top: 30px;
+      color: #8197ad;
+      font-size: .78rem;
+      line-height: 1.8;
+    }
+
+    .products-cta {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 5%;
+      text-align: center;
+      background:
+        linear-gradient(rgba(4, 16, 31, .86), rgba(4, 16, 31, .96)),
+        url("https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+    }
+
+    .products-cta-content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .products-cta h2 {
+      margin-bottom: 20px;
+    }
+
+    .products-cta p {
+      max-width: 580px;
+      margin: 0 auto 30px;
+    }
+
+    @media (max-width: 950px) {
+      .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gallery-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .products-hero {
+        min-height: 620px;
+      }
+
+      .products-hero-content {
+        padding: 85px 0;
+      }
+
+      .products-hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .products-hero-caption {
+        font-size: .52rem;
+        letter-spacing: 1px;
+      }
+
+      .collection-intro {
+        padding-top: 65px;
+      }
+
+      .product-gallery-section {
+        padding-bottom: 65px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .product-image {
+        height: 280px;
+      }
+
+      .gallery-heading {
+        margin-top: 55px;
+      }
+
+      .product-info p {
+        min-height: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .product-card,
+      .product-image img,
+      .product-link span {
+        transition: none;
+      }
+    }
+  </style>
+
+  <!-- FILTER GALERI -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+
+      filterButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const selectedCategory = button.dataset.filter;
+
+          filterButtons.forEach(function (item) {
+            const isActive = item === button;
+            item.classList.toggle('active', isActive);
+            item.setAttribute('aria-pressed', String(isActive));
+          });
+
+          productCards.forEach(function (card) {
+            const matches =
+              selectedCategory === 'all' ||
+              card.dataset.category === selectedCategory;
+
+            card.hidden = !matches;
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
+```

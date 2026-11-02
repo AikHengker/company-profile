@@ -1,0 +1,886 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hubungi Kami | FishStory</title>
+  <meta name="description" content="Hubungi FishStory untuk bertanya tentang ikan hias air tawar, ikan laut, koleksi, dan konsultasi akuarium.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">◈</span>
+      Fish<span>Story</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="kontak.html" class="nav-cta active">Hubungi Kami ↗</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+      <div class="contact-hero-overlay"></div>
+
+      <div class="contact-hero-content reveal">
+        <span class="eyebrow">LET'S START A CONVERSATION</span>
+
+        <h1>
+          Setiap cerita indah
+          <span>dimulai dari sini.</span>
+        </h1>
+
+        <p>
+          Punya pertanyaan tentang ikan hias, ingin menemukan koleksi
+          favorit, atau butuh informasi seputar akuarium? Kami siap
+          membantu perjalanan akuatikmu.
+        </p>
+
+        <a href="#contact-main" class="btn-primary">
+          Hubungi FishStory <span>↓</span>
+        </a>
+      </div>
+
+      <div class="contact-hero-caption">
+        <span>WE WOULD LOVE TO HEAR FROM YOU</span>
+        <span>FISHSTORY / CONTACT</span>
+      </div>
+      <div class="hero-mascots" aria-label="Maskot ikan FishStory">
+  <span class="mascot-fish mascot-orange">🐠</span>
+  <span class="mascot-fish mascot-blue">🐟</span>
+  <span class="mascot-fish mascot-puffer">🐡</span>
+  <span class="mascot-bubble">🫧</span>
+</div>
+    </section>
+
+    <!-- CONTACT INTRO -->
+    <section class="contact-intro" id="contact-main">
+      <div class="contact-intro-content reveal">
+        <span class="eyebrow">CONNECT WITH US</span>
+        <h2>Mari bicarakan <span>dunia akuatikmu.</span></h2>
+        <p>
+          Pilih cara yang paling nyaman untuk menghubungi kami.
+          Ceritakan kebutuhanmu, dan mari cari pilihan yang tepat
+          untuk akuariummu.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT CARDS -->
+    <section class="contact-details">
+      <article class="contact-card reveal">
+        <div class="contact-icon">↗</div>
+        <span class="contact-card-label">DIRECT MESSAGE</span>
+        <h3>WhatsApp</h3>
+        <p>
+          Bertanya tentang koleksi, ketersediaan ikan, atau konsultasi
+          sebelum memilih.
+        </p>
+        <a href="#contact-form" class="contact-card-link">
+          Kirim pesan <span>→</span>
+        </a>
+      </article>
+
+      <article class="contact-card reveal">
+        <div class="contact-icon">@</div>
+        <span class="contact-card-label">SEND AN INQUIRY</span>
+        <h3>Formulir Pesan</h3>
+        <p>
+          Sampaikan pertanyaan dan kebutuhanmu melalui formulir
+          pesan yang praktis.
+        </p>
+        <a href="#contact-form" class="contact-card-link">
+          Isi formulir <span>→</span>
+        </a>
+      </article>
+
+      <article class="contact-card reveal">
+        <div class="contact-icon">◎</div>
+        <span class="contact-card-label">EXPLORE FIRST</span>
+        <h3>Katalog Produk</h3>
+        <p>
+          Jelajahi inspirasi koleksi ikan hias air tawar dan air laut
+          sebelum menghubungi kami.
+        </p>
+        <a href="produk.html" class="contact-card-link">
+          Lihat koleksi <span>→</span>
+        </a>
+      </article>
+    </section>
+
+    <!-- FORM + VISUAL -->
+    <section class="contact-main section-contact" id="contact-form">
+
+      <div class="contact-form-panel reveal">
+        <span class="eyebrow">SEND US A MESSAGE</span>
+        <h2>Ceritakan <span>kebutuhanmu.</span></h2>
+        <p class="form-description">
+          Isi informasi berikut. Pesan akan disiapkan untuk dikirim
+          melalui WhatsApp setelah kamu mengonfirmasi pengiriman.
+        </p>
+
+        <form id="fishstory-form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama lengkap</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Nama kamu"
+                autocomplete="name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nama@email.com"
+                autocomplete="email"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="kategori">Apa yang ingin kamu cari?</label>
+            <select id="kategori" name="kategori" required>
+              <option value="">Pilih kategori</option>
+              <option value="Ikan hias air tawar">Ikan hias air tawar</option>
+              <option value="Ikan hias air laut">Ikan hias air laut</option>
+              <option value="Perlengkapan akuarium">Perlengkapan akuarium</option>
+              <option value="Konsultasi perawatan ikan">Konsultasi perawatan ikan</option>
+              <option value="Informasi kerja sama">Informasi kerja sama</option>
+              <option value="Pertanyaan lainnya">Pertanyaan lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="produk">Nama ikan atau produk (opsional)</label>
+            <input
+              type="text"
+              id="produk"
+              name="produk"
+              placeholder="Contoh: ikan koi, ikan badut..."
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan kamu</label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="5"
+              placeholder="Ceritakan apa yang ingin kamu tanyakan..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary submit-btn">
+            Lanjutkan ke WhatsApp <span>↗</span>
+          </button>
+
+          <p class="form-note">
+            WhatsApp akan terbuka dengan pesan yang sudah disiapkan.
+            Periksa kembali pesan sebelum mengirimnya.
+          </p>
+
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <aside class="contact-visual reveal">
+        <img
+          src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1000&q=85"
+          alt="Keindahan kehidupan bawah laut"
+          loading="lazy"
+        >
+
+        <div class="contact-visual-overlay"></div>
+
+        <div class="contact-visual-content">
+          <span class="eyebrow">YOUR AQUATIC JOURNEY</span>
+          <h3>Temukan inspirasi di setiap kedalaman.</h3>
+          <p>
+            Dunia akuatik yang indah dimulai dengan pilihan yang tepat
+            dan perawatan yang bertanggung jawab.
+          </p>
+          <a href="tentang.html" class="visual-link">
+            Cerita FishStory <span>↗</span>
+          </a>
+        </div>
+
+        <span class="visual-index">F / S — 001</span>
+      </aside>
+
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="faq-heading reveal">
+        <span class="eyebrow">GOOD TO KNOW</span>
+        <h2>Pertanyaan <span>yang sering diajukan.</span></h2>
+        <p>Beberapa hal yang mungkin ingin kamu ketahui sebelum menghubungi kami.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <details class="faq-item reveal">
+          <summary>Apakah semua ikan yang ada di katalog tersedia?</summary>
+          <p>
+            Tidak selalu. Ketersediaan ikan dapat berubah. Hubungi FishStory
+            untuk memastikan spesies, ukuran, dan stok terbaru.
+          </p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Apakah pemula bisa meminta rekomendasi ikan?</summary>
+          <p>
+            Tentu. Sampaikan ukuran akuarium, pengalaman memelihara ikan,
+            dan jenis lingkungan yang kamu inginkan agar rekomendasi
+            dapat disesuaikan dengan kebutuhanmu.
+          </p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Bisakah saya bertanya tentang ikan air laut?</summary>
+          <p>
+            Ya. Pilih kategori ikan air laut pada formulir dan jelaskan
+            kebutuhanmu. Pastikan akuarium laut memiliki sistem filtrasi,
+            kualitas air, dan salinitas yang sesuai.
+          </p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Bagaimana cara memulai pemesanan?</summary>
+          <p>
+            Kirim pertanyaan melalui formulir WhatsApp. Tim FishStory
+            dapat memberikan informasi mengenai ketersediaan dan langkah
+            pemesanan setelah detail bisnis dikonfirmasi.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-bottom-cta">
+      <div class="contact-bottom-content reveal">
+        <span class="eyebrow">THE OCEAN IS CALLING</span>
+        <h2>Siap memulai <span>cerita barumu?</span></h2>
+        <p>
+          Temukan ikan yang tepat dan bangun dunia akuatik yang
+          mencerminkan kepribadianmu.
+        </p>
+        <a href="produk.html" class="btn-primary">Jelajahi Koleksi ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">◈</span>
+          Fish<span>Story</span>
+        </a>
+        <p>
+          Menghadirkan keindahan dunia akuatik,
+          satu cerita dalam satu waktu.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Eksplorasi</h4>
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="produk.html">Produk</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Terhubung</h4>
+        <a href="kontak.html">Kontak</a>
+        <a href="produk.html">Katalog Ikan</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> FishStory. All rights reserved.</p>
+      <span>MADE FOR AQUATIC ENTHUSIASTS <span class="footer-dot">●</span></span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+
+  <!-- KONTAK: CSS KHUSUS -->
+  <style>
+    .contact-hero {
+      min-height: 66vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(3, 13, 29, .94), rgba(3, 13, 29, .35)),
+        url("https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=2000&q=90")
+        center / cover no-repeat;
+    }
+
+    .contact-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, #061426, transparent 60%);
+    }
+
+    .contact-hero-content {
+      position: relative;
+      z-index: 1;
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      padding: 110px 0 130px;
+    }
+
+    .contact-hero h1 {
+      max-width: 850px;
+      margin: 0 0 25px;
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2.8rem, 6vw, 5.4rem);
+      line-height: 1.06;
+      letter-spacing: -2px;
+    }
+
+    .contact-hero h1 span,
+    .contact-intro h2 span,
+    .contact-form-panel h2 span,
+    .faq-heading h2 span,
+    .contact-bottom-content h2 span {
+      color: #62e8ff;
+    }
+
+    .contact-hero-content > p {
+      max-width: 620px;
+      color: #c0cedf;
+      font-size: 1rem;
+      line-height: 1.9;
+      margin-bottom: 32px;
+    }
+
+    .contact-hero-caption {
+      position: absolute;
+      bottom: 25px;
+      left: 5%;
+      right: 5%;
+      display: flex;
+      justify-content: space-between;
+      color: #a6bdd0;
+      font-size: .62rem;
+      letter-spacing: 1.7px;
+    }
+
+    .contact-intro {
+      padding: 85px 5% 35px;
+      text-align: center;
+    }
+
+    .contact-intro-content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .contact-intro h2,
+    .contact-form-panel h2,
+    .faq-heading h2,
+    .contact-bottom-content h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin: 0 0 18px;
+    }
+
+    .contact-intro p,
+    .faq-heading > p,
+    .contact-bottom-content > p {
+      color: #aabbd0;
+      font-size: .94rem;
+      line-height: 1.9;
+    }
+
+    .contact-details {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 25px 5% 75px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .contact-card {
+      padding: 30px;
+      border: 1px solid rgba(98, 232, 255, .14);
+      background: linear-gradient(145deg, #102a40, #08192b);
+      transition: transform .3s, border-color .3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(98, 232, 255, .55);
+    }
+
+    .contact-icon {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(98, 232, 255, .4);
+      border-radius: 50%;
+      color: #62e8ff;
+      font-size: 1.5rem;
+    }
+
+    .contact-card-label {
+      color: #62e8ff;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+    }
+
+    .contact-card h3 {
+      color: #f1f8ff;
+      font: 600 1.4rem 'Outfit', sans-serif;
+      margin: 12px 0;
+    }
+
+    .contact-card p {
+      min-height: 78px;
+      color: #aabbd0;
+      font-size: .88rem;
+      line-height: 1.8;
+    }
+
+    .contact-card-link {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 18px;
+      margin-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      color: #62e8ff;
+      text-decoration: none;
+      font-size: .85rem;
+      font-weight: 600;
+    }
+
+    .section-contact {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 35px 5% 110px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: stretch;
+      gap: 35px;
+    }
+
+    .contact-form-panel {
+      padding: clamp(25px, 4vw, 45px);
+      border: 1px solid rgba(98, 232, 255, .15);
+      background: linear-gradient(145deg, #0d253a, #071525);
+    }
+
+    .contact-form-panel h2 {
+      font-size: clamp(2rem, 3vw, 2.7rem);
+    }
+
+    .form-description {
+      color: #aabbd0;
+      font-size: .9rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    #fishstory-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .form-group label {
+      color: #e4eef8;
+      font-size: .84rem;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      border: 1px solid rgba(151, 190, 218, .2);
+      border-radius: 0;
+      outline: none;
+      padding: 14px 15px;
+      background: #061526;
+      color: #f1f8ff;
+      font: inherit;
+      font-size: .87rem;
+      transition: border-color .25s, box-shadow .25s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #70869c;
+    }
+
+    .form-group select {
+      color-scheme: dark;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #62e8ff;
+      box-shadow: 0 0 0 3px rgba(98, 232, 255, .08);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      justify-content: center;
+      cursor: pointer;
+      border: 0;
+      font: inherit;
+      font-weight: 700;
+    }
+
+    .form-note {
+      margin: -5px 0 0;
+      color: #8197ad;
+      font-size: .76rem;
+      line-height: 1.7;
+    }
+
+    .form-status {
+      color: #62e8ff;
+      font-size: .85rem;
+      line-height: 1.7;
+    }
+
+    .contact-visual {
+      position: relative;
+      min-height: 650px;
+      overflow: hidden;
+      background: #0b2033;
+    }
+
+    .contact-visual > img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .contact-visual-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(2, 12, 24, .97), rgba(2, 12, 24, .05) 85%);
+    }
+
+    .contact-visual-content {
+      position: absolute;
+      right: 30px;
+      bottom: 60px;
+      left: 30px;
+    }
+
+    .contact-visual-content h3 {
+      max-width: 450px;
+      margin: 0 0 15px;
+      color: white;
+      font: 600 clamp(1.8rem, 3vw, 2.7rem)/1.15 'Outfit', sans-serif;
+    }
+
+    .contact-visual-content p {
+      max-width: 420px;
+      color: #c1d1df;
+      font-size: .9rem;
+      line-height: 1.8;
+    }
+
+    .visual-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #62e8ff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .visual-index {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      color: white;
+      font-size: .7rem;
+      letter-spacing: 2px;
+    }
+
+    .faq-section {
+      padding: 90px 5% 100px;
+      background: radial-gradient(ellipse at 50% 0%, #0b3048, transparent 65%), #07182b;
+    }
+
+    .faq-heading {
+      max-width: 720px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .faq-list {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(151, 190, 218, .17);
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 23px 35px 23px 0;
+      color: #edf7ff;
+      font: 500 1.05rem 'Outfit', sans-serif;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #62e8ff;
+      font-size: 1.5rem;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-item p {
+      max-width: 740px;
+      margin: 0;
+      padding: 0 0 24px;
+      color: #aabbd0;
+      font-size: .9rem;
+      line-height: 1.9;
+    }
+
+    .contact-bottom-cta {
+      padding: 95px 5%;
+      text-align: center;
+      background:
+        linear-gradient(rgba(4, 16, 31, .88), rgba(4, 16, 31, .95)),
+        url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+    }
+
+    .contact-bottom-content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .contact-bottom-content > p {
+      max-width: 560px;
+      margin: 0 auto 30px;
+    }
+
+    @media (max-width: 950px) {
+      .contact-details {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card p {
+        min-height: 0;
+      }
+
+      .section-contact {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-visual {
+        min-height: 500px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .contact-hero {
+        min-height: 620px;
+      }
+
+      .contact-hero-content {
+        padding: 85px 0;
+      }
+
+      .contact-hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .contact-hero-caption {
+        font-size: .52rem;
+        letter-spacing: .7px;
+      }
+
+      .contact-intro {
+        padding-top: 65px;
+      }
+
+      .contact-details {
+        padding-bottom: 55px;
+      }
+
+      .section-contact {
+        padding-bottom: 75px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-visual {
+        min-height: 440px;
+      }
+
+      .faq-section {
+        padding-top: 70px;
+        padding-bottom: 75px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .contact-card {
+        transition: none;
+      }
+    }
+  </style>
+
+  <!-- FORMULIR WHATSAPP -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('fishstory-form');
+      const status = document.getElementById('form-status');
+
+      /*
+        GANTI dengan nomor WhatsApp bisnis FishStory.
+        Gunakan kode negara tanpa tanda +, spasi, atau tanda hubung.
+        Contoh format Indonesia: 6281234567890
+      */
+      const WHATSAPP_NUMBER = '6281234567890';
+
+      // Isi otomatis produk jika pengunjung datang dari tautan katalog.
+      const params = new URLSearchParams(window.location.search);
+      const productInput = document.getElementById('produk');
+      const productParam = params.get('produk');
+
+      if (productParam && productInput) {
+        productInput.value = productParam;
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!form.reportValidity()) {
+          return;
+        }
+
+        if (!/^\d{8,15}$/.test(WHATSAPP_NUMBER) ||
+            WHATSAPP_NUMBER === '6281234567890') {
+          status.textContent =
+            'Silakan ganti nomor WhatsApp contoh di dalam script dengan nomor bisnis FishStory terlebih dahulu.';
+          return;
+        }
+
+        const data = new FormData(form);
+
+        const nama = data.get('nama').trim();
+        const email = data.get('email').trim();
+        const kategori = data.get('kategori');
+        const produk = data.get('produk').trim() || 'Belum ditentukan';
+        const pesan = data.get('pesan').trim();
+
+        const message = [
+          'Halo FishStory! Saya ingin bertanya.',
+          '',
+          'Nama: ' + nama,
+          'Email: ' + email,
+          'Kategori: ' + kategori,
+          'Ikan/Produk: ' + produk,
+          '',
+          'Pesan:',
+          pesan
+        ].join('\n');
+
+        const whatsappURL =
+          'https://wa.me/' + WHATSAPP_NUMBER +
+          '?text=' + encodeURIComponent(message);
+
+        status.textContent = 'Membuka WhatsApp dengan pesan yang sudah disiapkan...';
+        window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+      });
+    });
+  </script>
+
+</body>
+</html>
+```
